@@ -9,10 +9,11 @@ const Summoner_Data = {
         url: `${baseURL}${url}`,
         headers: {
           method: 'GET',
-          'X-Riot-Token': 'RGAPI-926ce681-d37a-4df6-90bf-de1eab79efbe',
+          'X-Riot-Token': process.env.RIOT_API,
         },
       })
-      .then(res => res.data);
+      .then(res => res.data)
+      .catch(err => {});
   },
 };
 

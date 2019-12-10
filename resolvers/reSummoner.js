@@ -18,10 +18,6 @@ const Summoner_Resolver = {
     //   return dataSources.Summoner_Data.getSummoner(parent.summonerName);
     // },
   },
-  ParticipantTimeline: {
-    csDiffPerMinDeltas(parent, args, ctx, info) {
-      return JSON.stringify(parent.csDiffPerMinDeltas);
-    },
-  },
+
 };
 export { Summoner_Resolver as default };

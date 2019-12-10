@@ -14,5 +14,28 @@ const Match_Resolver = {
       return parent.seasonId ? parent.seasonId : parent.season;
     },
   },
+  ParticipantTimeline: {
+    csDiffPerMinDeltas(parent, args, ctx, info) {
+      return JSON.stringify(parent.csDiffPerMinDeltas);
+    },
+    goldPerMinDeltas(parent, args, ctx, info) {
+      return JSON.stringify(parent.goldPerMinDeltas);
+    },
+    xpDiffPerMinDeltas(parent, args, ctx, info) {
+      return JSON.stringify(parent.xpDiffPerMinDeltas);
+    },
+    creepsPerMinDeltas(parent, args, ctx, info) {
+      return JSON.stringify(parent.creepsPerMinDeltas);
+    },
+    xpPerMinDeltas(parent, args, ctx, info) {
+      return JSON.stringify(parent.xpPerMinDeltas);
+    },
+    damageTakenDiffPerMinDeltas(parent, args, ctx, info) {
+      return JSON.stringify(parent.damageTakenDiffPerMinDeltas);
+    },
+    damageTakenPerMinDeltas(parent, args, ctx, info) {
+      return JSON.stringify(parent.damageTakenPerMinDeltas);
+    },
+  },
 };
 export { Match_Resolver as default };

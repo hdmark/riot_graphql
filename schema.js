@@ -209,13 +209,13 @@ const typeDefs = gql`
     lane: String #Participant's calculated lane. MID and BOT are legacy values. (Legal values: MID, MIDDLE, TOP, JUNGLE, BOT, BOTTOM)
     participantId: Int
     csDiffPerMinDeltas: String #Creep score difference versus the calculated lane opponent(s) for a specified period.
-    #goldPerMinDeltas:	Map[String, double]	#Gold for a specified period.
-    #xpDiffPerMinDeltas:	Map[String, double]	#Experience difference versus the calculated lane opponent(s) for a specified period.
-    #creepsPerMinDeltas:	Map[String, double]	#Creeps for a specified period.
-    #xpPerMinDeltas:	Map[String, double]	#Experience change for a specified period.
+    goldPerMinDeltas:	String	#Gold for a specified period.
+    xpDiffPerMinDeltas:	String	#Experience difference versus the calculated lane opponent(s) for a specified period.
+    creepsPerMinDeltas:	String	#Creeps for a specified period.
+    xpPerMinDeltas:	String	#Experience change for a specified period.
     role: String #Participant's calculated role. (Legal values: DUO, NONE, SOLO, DUO_CARRY, DUO_SUPPORT)
-    #damageTakenDiffPerMinDeltas:	Map[String, double]	#Damage taken difference versus the calculated lane opponent(s) for a specified period.
-    #damageTakenPerMinDeltas:	Map[String, double]	#Damage taken for a specified period.
+    damageTakenDiffPerMinDeltas:	String	#Damage taken difference versus the calculated lane opponent(s) for a specified period.
+    damageTakenPerMinDeltas:	String	#Damage taken for a specified period.
   }
   type ParticipantTimeLineData {
     timeframe: String

@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const port = 3001;
 const app = express();
+require('dotenv').config()
 
 // --------------------EXPRESS SETUP--------------------
 app.use(cors()); // ignores the cross header origin bs
